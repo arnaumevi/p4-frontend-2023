@@ -1,11 +1,19 @@
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Pokemon } from "./../types/index";
 
-export default function usePokemons() {
-  const [pokemons, setPokemons] = useState([]);
+function usePokemons() {
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]); // Usa la interfaz aquí
 
   useEffect(() => {
-    // Aquí irá el código para obtener los pokemons de la API
+    axios
+      .get("https://pokeapi.co/api/v2/pokemon?limit=151")
+      .then((response) => {
+        setPokemons(response.data.results);
+      });
   }, []);
 
   return pokemons;
 }
+
+export default usePokemons;
