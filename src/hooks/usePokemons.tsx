@@ -3,7 +3,7 @@ import axios from "axios";
 import { Pokemon } from "./../types/index";
 
 function usePokemons() {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([]); // Usa la interfaz aquí
+  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
 
   useEffect(() => {
     axios

@@ -1,4 +1,3 @@
-// usePokemon.tsx
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Pokemon } from "../types";

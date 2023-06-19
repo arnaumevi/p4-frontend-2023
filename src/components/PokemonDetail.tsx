@@ -9,7 +9,7 @@ export default function PokemonDetails() {
   const pokemon = usePokemon(name);
 
   if (!pokemon) {
-    return <div>No se encontró el Pokémon.</div>;
+    return <div>Not found</div>;
   }
 
   return (
