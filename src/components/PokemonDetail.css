@@ -1,0 +1,74 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #b2dfdb;
+  border-radius: 15px;
+  border: 2px solid #00695c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.pokemon-name {
+  font-size: 2em;
+  color: #00695c;
+  text-transform: capitalize;
+}
+
+.pokemon-images {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border-bottom: 2px solid #00695c;
+  font-weight: strong;
+  background-color: rgb(181, 252, 248);
+}
+
+.pokemon-image,
+.pokemon-shiny-image {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #00695c;
+  border-radius: 10px;
+  background-color: rgb(181, 252, 248);
+}
+
+.pokemon-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pokemon-abilities,
+.pokemon-types {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+  box-sizing: border-box;
+}
+
+.pokemon-abilities {
+  padding: 10px;
+  margin-top: 1px;
+  border-top: 2px solid #00695c;
+  border-radius: 10px;
+  background-color: rgb(181, 252, 248);
+}
+
+.pokemon-types {
+  border-top: 2px solid #00695c;
+  margin-top: 1px;
+  border-radius: 10px;
+  background-color: rgb(181, 252, 248);
+}

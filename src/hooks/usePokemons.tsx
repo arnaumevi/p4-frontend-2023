@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Pokemon } from "./../types/index";
+import { PokemonData } from "./../types/index";
 
 function usePokemons() {
-  const [pokemons, setPokemons] = useState<Pokemon[]>([]);
+  const [pokemons, setPokemons] = useState<PokemonData[]>([]);
 
   useEffect(() => {
     axios

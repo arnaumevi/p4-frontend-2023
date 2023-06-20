@@ -1,17 +1,17 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Pokemon } from "../types";
+import { PokemonData } from "../types";
 
-const usePokemon = (pokemonId: number): Pokemon | null => {
-  const [pokemon, setPokemon] = useState<Pokemon | null>(null);
+const usePokemon = (pokemonName: string): PokemonData | null => {
+  const [pokemon, setPokemon] = useState<PokemonData | null>(null);
 
   useEffect(() => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((response) => {
         setPokemon(response.data);
       });
-  }, [pokemonId]);
+  }, [pokemonName]);
 
   return pokemon;
 };

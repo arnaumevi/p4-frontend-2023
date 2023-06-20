@@ -1,21 +1,17 @@
-export interface Pokemon {
-  id: number;
+export interface PokemonData {
   name: string;
-  height: number;
-  weight: number;
-  types: PokemonType[];
-  abilities: PokemonAbility[];
-  sprites: PokemonSprites;
-}
-
-export interface PokemonSprites {
-  front_default: string;
-}
-
-export interface PokemonType {
-  type: {
-    name: string;
+  sprites: {
+    front_default: string;
+    front_shiny?: string;
+    other?: {
+      "official-artwork"?: {
+        front_default?: string;
+      };
+    };
   };
+  abilities: PokemonAbility[];
+  types: PokemonType[];
+  weight: number;
 }
 
 export interface PokemonAbility {
@@ -23,15 +19,9 @@ export interface PokemonAbility {
     name: string;
   };
 }
-export interface PokemonData {
-  name: string;
-  sprites: {
-    front_default: string;
-    front_shiny?: string;
-    other?: {
-      official_artwork?: {
-        front_default?: string;
-      };
-    };
+
+export interface PokemonType {
+  type: {
+    name: string;
   };
 }
