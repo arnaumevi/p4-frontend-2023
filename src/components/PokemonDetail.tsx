@@ -10,7 +10,7 @@ export default function PokemonDetails() {
   const pokemon = usePokemon(name);
 
   if (!pokemon) {
-    return <div className="pokemon-not-found">No se encontró el Pokémon</div>;
+    return <div className="pokemon-not-found">Pokémon not found</div>;
   }
 
   return (
@@ -22,7 +22,7 @@ export default function PokemonDetails() {
       >
         <div className="pokemon-image-container">
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-          <p className="pokemon-image-text">Estado Normal</p>
+          <p className="pokemon-image-text">Normal</p>
         </div>
         <div className="pokemon-image-container">
           <img src={pokemon.sprites.front_shiny} alt={pokemon.name} />

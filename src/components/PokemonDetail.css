@@ -23,6 +23,8 @@
   justify-content: space-around;
   width: 100%;
   border-bottom: 2px solid #00695c;
+  border-top: 2px solid #00695c;
+  border-radius: 10px;
   font-weight: strong;
   background-color: rgb(181, 252, 248);
 }
@@ -64,6 +66,7 @@
   border-top: 2px solid #00695c;
   border-radius: 10px;
   background-color: rgb(181, 252, 248);
+  border-bottom: 2px solid #00695c;
 }
 
 .pokemon-types {
@@ -71,4 +74,5 @@
   margin-top: 1px;
   border-radius: 10px;
   background-color: rgb(181, 252, 248);
+  border-bottom: 2px solid #00695c;
 }
