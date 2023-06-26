@@ -1,78 +1,39 @@
-.pokemon-card {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: orange;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #b2dfdb;
-  border-radius: 15px;
-  border: 2px solid #00695c;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
-
-.pokemon-name {
-  font-size: 2em;
-  color: #00695c;
-  text-transform: capitalize;
-}
-
-.pokemon-images {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  border-bottom: 2px solid #00695c;
-  border-top: 2px solid #00695c;
-  border-radius: 10px;
-  font-weight: strong;
-  background-color: rgb(181, 252, 248);
-}
-
-.pokemon-image,
-.pokemon-shiny-image {
-  width: 150px;
-  height: 150px;
-  border: 2px solid #00695c;
-  border-radius: 10px;
-  background-color: rgb(181, 252, 248);
-}
-
-.pokemon-info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+}
+
+.pokemon-list-container {
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
-.pokemon-abilities,
-.pokemon-types {
-  list-style: none;
-  padding: 0;
-  font-size: 1.2em;
-  width: 100%;
+.pokemon-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 15px;
-  box-sizing: border-box;
-}
-
-.pokemon-abilities {
+  justify-content: center;
+  border: 1px solid #000;
+  margin-bottom: 20px;
   padding: 10px;
-  margin-top: 1px;
-  border-top: 2px solid #00695c;
-  border-radius: 10px;
-  background-color: rgb(181, 252, 248);
-  border-bottom: 2px solid #00695c;
+  background-color: #fff;
 }
 
-.pokemon-types {
-  border-top: 2px solid #00695c;
-  margin-top: 1px;
-  border-radius: 10px;
-  background-color: rgb(181, 252, 248);
-  border-bottom: 2px solid #00695c;
+.pokemon-list-header {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pokemon-search {
+  margin-bottom: 20px;
+}
+
+.pokemon-search input {
+  margin-right: 30px;
 }
