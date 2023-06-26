@@ -24,6 +24,19 @@ body {
   padding: 10px;
   background-color: #fff;
 }
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #b2dfdb;
+  border-radius: 15px;
+  border: 2px solid #00695c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 
 .pokemon-list-header {
   font-size: 2em;
@@ -35,5 +48,5 @@ body {
 }
 
 .pokemon-search input {
-  margin-right: 30px;
+  margin-right: 10px;
 }
